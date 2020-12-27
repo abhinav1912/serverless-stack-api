@@ -1,6 +1,6 @@
 import AWS from "aws-sdk";
 
-const clinet = new AWS.DynamoDB.DocumentClient();
+const client = new AWS.DynamoDB.DocumentClient();
 
 export default {
     get: (params) => client.get(params).promise(),
